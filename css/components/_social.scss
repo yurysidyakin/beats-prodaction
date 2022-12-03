@@ -1,0 +1,26 @@
+.social {
+
+    &__item {
+        margin-left: 10px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &__list {
+        display: flex;
+    }
+
+
+    &__icon {
+        width: 30px;
+        height: 30px;
+        color: #B3B3B3;
+        transition: color .3s;
+
+        &:hover {
+            color: black;
+        }
+    }
+}

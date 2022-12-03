@@ -1,0 +1,23 @@
+.feature {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        width: rem(45px);
+        margin-right: rem(10px);
+        transition: color .5s;
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+    &__text {
+        max-width: rem(100px);
+    }
+
+    &__icon-img {
+        width: 100%;
+        height: rem(45px);
+    }
+}

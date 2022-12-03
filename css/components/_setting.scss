@@ -1,0 +1,53 @@
+.setting {
+
+  @include tablets {
+    display: none;
+  }
+
+  &:hover &__wrap {
+    left: 100%;
+    opacity: 1;
+  }
+
+  &__wrap {
+    background: #d5d5d5;
+    box-shadow: 4px 4px rem(40px) rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    position: absolute;
+    left: 10000%;
+    min-width: rem(250px);
+    opacity: 0;
+    transition: opacity 1.5s;
+
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: rem(10px) rem(20px);
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(28px);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-left {
+    display: flex;
+  }
+
+  &__text {
+    margin-left: rem(15px);
+  }
+
+  &__img {
+    max-width: rem(24px);
+    max-height: rem(22px);
+  }
+
+}

@@ -1,0 +1,50 @@
+.radio {
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    column-gap: rem(10px);
+
+    &--checkbox {
+        .radio__visible {
+            border-radius: 0;
+
+
+            &::before {
+                content: "";
+                background: url('../../img/svg/decor-order.svg') center center no-repeat;
+            }
+        }
+    }
+
+    &__elem {
+        display: none;
+
+        &:checked~.radio__visible {
+            &::before {
+                display: block;
+            }
+
+        }
+    }
+
+    &__visible {
+        width: rem(26px);
+        height: rem(26px);
+        position: relative;
+        border-radius: 50%;
+        background: $white;
+
+        &::before {
+            content: "";
+            width: rem(14px);
+            height: rem(14px);
+            background: $red;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            display: none;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

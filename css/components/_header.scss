@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    font-family: 'Play';
+
+    &__img {
+        width: rem(12px);
+        height: rem(12px);
+        margin-right: rem(6px);
+    }
+
+
+    &__icon {
+        flex-shrink: 0;
+    }
+
+    &__text {
+        white-space: nowrap;
+    }
+
+}
+
+.header__phone {
+    @include tablets {
+        display: none;
+    }
+}

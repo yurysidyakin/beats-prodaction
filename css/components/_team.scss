@@ -1,0 +1,128 @@
+.team__container {
+  margin-top: 1.7777777778rem;
+  margin: 0 auto;
+
+  @include tablets {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.team {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    min-height: rem(480px);
+    letter-spacing: -0.36px;
+
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10%;
+      min-height: 0;
+    }
+  }
+
+  &__card {
+    flex: 1;
+    text-align: center;
+    margin-right: rem(20px);
+    transition: max-height 0.5s;
+
+    @include tablets {
+      width: 100%;
+      max-width: rem(222px);
+      margin-right: 0;
+      text-align: center;
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__photo {
+    margin-bottom: rem(25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablets {
+      display: none;
+    }
+
+    &--hidden {
+      display: none;
+
+      @include tablets {
+        display: block;
+      }
+    }
+  }
+
+  &__pic {
+    max-width: 100%;
+    display: block;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: rem(10px);
+    color: black;
+    font-size: rem(21px);
+    font-weight: 700;
+
+    transition: max-height 0.5s;
+
+    @include tablets {
+      margin-bottom: 0.8333333333rem;
+    }
+
+    &::after {
+      content: "";
+      width: 9px;
+      height: 7px;
+      margin-left: 5px;
+      transform: rotate(0deg);
+      transition: transform 0.5s ease-out;
+      background: url("../../img/svg/treangle.svg") center center/contain no-repeat;
+    }
+
+    &--active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__desk {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    will-change: max-height;
+
+    &--active {
+      max-height: 100%;
+      margin-bottom: rem(20px);
+    }
+  }
+
+  &__position {
+    margin-bottom: 6px;
+    color: #000000;
+    font-weight: 400;
+  }
+
+  &__text {
+    color: #6666;
+    line-height: normal;
+  }
+}

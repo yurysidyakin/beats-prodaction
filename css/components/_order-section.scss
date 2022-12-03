@@ -1,0 +1,12 @@
+.order-section {
+    background: $black;
+    color: $white;
+    position: relative;
+
+    &::after {
+        content: url('../../img/decor__order-2.svg');
+        top: -2%;
+        right: 5%;
+        position: absolute;
+    }
+}

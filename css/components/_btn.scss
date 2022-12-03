@@ -1,0 +1,31 @@
+.btn {
+    font-weight: bold;
+    padding: rem(18px) rem(35px);
+    border-radius: rem(100px);
+    text-transform: uppercase;
+    border: none;
+    min-height: 60px;
+    min-width: 165px;
+    transition: background 0.5s;
+
+    &--theme--color {
+        background: $red;
+        color: $white;
+
+        &:hover {
+            background: $white;
+            color: $red;
+        }
+    }
+
+    &--theme--transperent {
+        background: transparent;
+        color: $white;
+
+        &:hover {
+            background: $white;
+            color: $red;
+        }
+    }
+
+}

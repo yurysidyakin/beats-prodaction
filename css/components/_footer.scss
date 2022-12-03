@@ -1,0 +1,38 @@
+.footer {
+    min-height: 100px;
+    display: flex;
+    padding-top: 30px;
+
+    &__social {
+        @include phones {
+            padding-bottom: rem(32px);
+        }
+    }
+
+    &__contacts {
+        @include phones {
+            padding-top: rem(20px);
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        @include phones {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__phone {
+
+
+        @include phones {
+            justify-content: center;
+            margin-top: rem(52px);
+            margin-bottom: rem(22px);
+        }
+    }
+}

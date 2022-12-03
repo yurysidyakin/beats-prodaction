@@ -1,0 +1,10 @@
+.player {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    width: rem(660px);
+    height: rem(440px);
+  }
+}

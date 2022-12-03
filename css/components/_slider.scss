@@ -1,0 +1,172 @@
+.slider {
+  background: #F8FAF9;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @include tablets {
+      flex-direction: column;
+    }
+
+  }
+
+
+
+  &__settings {
+    width: rem(91px);
+    height: rem(91px);
+    background: #9A9A9A;
+    border-radius: 4px;
+    position: relative;
+
+    &::before {
+      content: '';
+      background: url('../img/svg/setting.svg') no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: rem(48px);
+      height: rem(48px);
+    }
+  }
+
+  &__content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: rem(60px);
+
+    @include tablets {
+      width: 100%;
+      padding-left: 0;
+      align-items: center;
+    }
+  }
+
+  &__price {
+    display: flex;
+    min-height: rem(60px);
+    align-items: center;
+    padding-top: rem(24px);
+  }
+
+  &__title {
+    font-size: rem(36px);
+    text-transform: uppercase;
+    margin-top: rem(20px);
+
+    @include tablets {
+      font-size: 28px;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-size: rem(16px);
+    color: #666666;
+    font-weight: normal;
+    padding-bottom: rem(30px);
+    width: 80%;
+    line-height: rem(18px);
+
+    @include tablets {
+      text-align: center;
+    }
+  }
+
+
+  &__price-value {
+    font-size: rem(36px);
+    margin-right: rem(24px);
+    white-space: nowrap;
+  }
+
+  &__icon-wrap {
+    @include tablets {
+      width: rem(306px);
+      height: rem(306px);
+    }
+  }
+
+  &__img {
+    padding-left: 33px;
+
+    @include tablets {
+      padding-left: 0;
+    }
+
+  }
+}
+
+.option {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__name {
+    font-weight: normal;
+  }
+}
+
+.item {
+  display: flex;
+}
+
+.bx-wrapper {
+  box-shadow: none;
+  border: 0;
+  background: transparent;
+}
+
+
+.arrow {
+  background: url('../img/svg/arrow-left.svg') center center no-repeat;
+  background-size: contain;
+  display: block;
+  width: 13px;
+  height: 28px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  &--left {
+
+    left: 0;
+
+    @include tablets {}
+  }
+
+  &--right {
+    right: 0;
+    transform: rotate(180deg);
+
+    @include tablets {}
+  }
+
+  @include tablets {
+    top: 20%;
+  }
+}
+
+.item {
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+}

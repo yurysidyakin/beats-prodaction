@@ -1,0 +1,63 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//breakpoint
+$tablets: 768px;
+$phones: 480px;
+
+
+
+// colors
+$red:#E01F3C;
+$grey:#F2F5F4;
+$black:#151515;
+$white:#fff;
+$text:#666666;
+
+
+// z-index
+
+$z-fixed-menu: 100;
+
+// media
+@import '_media.scss';
+
+// normalize
+@import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css';
+
+// setups
+@import 'https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@100&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Play:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@100&display=swap';
+@import './components/layout.scss';
+
+// components
+@import './components/_hero.scss';
+@import './components/_header.scss';
+@import './components/_features.scss';
+@import './components/_feature.scss';
+@import './components/_btn.scss';
+@import './components/_section.scss';
+@import './components/_headline.scss';
+@import './components/_benefits.scss';
+@import './components/_benefit.scss';
+@import './components/_benefits-section.scss';
+@import './components/_reviews.scss';
+@import './components/_interactive__avatar.scss';
+@import './components/_reviews-section.scss';
+@import './components/_form.scss';
+@import './components/_radio.scss';
+@import './components/_order-section.scss';
+@import './components/_fixed-menu.scss';
+@import './components/_hamburger.scss';
+@import './components/_logo.scss';
+@import './components/_footer.scss';
+@import './components/_social.scss';
+@import './components/_modal-menu.scss';
+@import './components/_slider.scss';
+@import './components/_setting.scss';
+@import './components/_team.scss';
+@import './components/_modal.scss';
+@import './components/_map.scss';
+@import './components/_player.scss';
+@import './components/_products-menu.scss';
+@import './components/_menu.scss';
